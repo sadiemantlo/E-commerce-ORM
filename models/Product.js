@@ -16,7 +16,7 @@ Product.init(
       autoIncrement: true
     },
     product_name: {
-      type: DataTypes.SRING,
+      type: DataTypes.STRING,
       allowNull: false
     },
     price: {
@@ -24,7 +24,7 @@ Product.init(
       allowNull: false,
       validate: {
         isDecimal: true
-      }
+      } 
     },
     stock: {
       type: DataTypes.INTEGER,
